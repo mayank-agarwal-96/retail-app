@@ -15,7 +15,7 @@ module.exports = function(wagner) {
 				if(!category) {
 					return res.
 						status(status.NOT_FOUND).
-						json({ error: 'NOT_FOUND'});
+						json({ error: 'NOT FOUND'});
 				}
 				res.json({ category : category });
 			});
