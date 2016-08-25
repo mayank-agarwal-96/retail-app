@@ -1,6 +1,15 @@
 {
 	"dependencies": {
-		"mongodb" : "2.1.11",
-		"mongoose" : "4.5.9"
+		"mongoose" : "4.5.9",
+		"express" : "4.14.0",
+		"wagner-core" : "0.2.0",
+		"http-status" : "0.2.3"
+	},
+	"devDependencies" : {
+		"mocha" : "3.0.2",
+		"superagent" : "2.2.0"
+	},
+	"scripts" : {
+		"test" : "mocha test.js"
 	}
 }
