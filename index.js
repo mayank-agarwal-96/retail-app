@@ -1,16 +1,12 @@
-var mongodb = require('mongodb');
+var express = require('express');
+var wagner = require('wagner-core');
 
-var uri = 'mongodb://localhost:27017/example';
+require('./models')(wagner);
 
-mongodb.MongoClient.connect(uri, function(error,db){
-	if(error){
-		console.log(error);
-		process.exit(1);
-	}
+var app = express();
 
-	db.collection('sample').insert({x : 1}, function(error,result){
-		
-	}	
-	)
-}
-)
+app.use('/api/v1',require('./api')(wagner));
+
+app.listen(3000);
+
+console.log("Server active on port 3000");
