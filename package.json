@@ -3,7 +3,8 @@
 		"mongoose" : "4.5.9",
 		"express" : "4.14.0",
 		"wagner-core" : "0.2.0",
-		"http-status" : "0.2.3"
+		"http-status" : "0.2.3",
+		"underscore" : "1.8.3"
 	},
 	"devDependencies" : {
 		"mocha" : "3.0.2",
